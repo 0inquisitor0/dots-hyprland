@@ -1,0 +1,86 @@
+* {
+    border: none;
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF
+}
+
+/* Скрываем основной фон бара */
+window#waybar {
+    background: transparent;
+}
+
+/* Общий стиль для ВСЕХ модулей — теперь каждый сам по себе */
+#workspaces,
+#clock,
+#language,
+#cpu,
+#temperature,
+#pulseaudio,
+#battery {
+    background: rgba(0, 0, 0, 0.2); 
+    color: #ffffff;
+    border-radius: 25px; /* Идеальное скругление для всех */
+    padding: 0 12px;     /* Внутренние отступы */
+    margin: 5px 4px;     /* 4px — это зазор между островками */
+}
+
+/* Удаляем старые правила "склейки", если они остались */
+#language, #cpu, #temperature, #pulseaudio, #battery {
+    /* Эти строки гарантируют, что старые настройки сбросятся */
+    border-radius: 25px; 
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+/* Контейнер для рабочих столов */
+#workspaces {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    padding: 0 5px;
+    margin: 5px 4px;
+}
+
+/* Общий стиль для всех кнопок-цифр */
+#workspaces button {
+    color: #C0C0C0;
+    padding: 0;
+    margin: 4px 2px;
+    /* Устанавливаем одинаковую ширину и высоту для идеального круга */
+    min-width: 26px;
+    min-height: 26px;
+    border-radius: 50%;
+}
+
+/* Стиль ТЕКУЩЕГО рабочего стола (Залитый белый круг) */
+#workspaces button.active {
+    background-color: rgba(0,0,0,0.5); /* Белая заливка */
+    color: #000000;           /* Черный текст */
+    border-radius: 50%;        /* Обязательно 50% для круга */
+}
+
+/* Убираем стандартное подсвечивание при наведении (по желанию) */
+#workspaces button:hover {
+    box-shadow: inherit;
+    text-shadow: inherit;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+tooltip {
+    background: rgba(40, 40, 40, 0.9); /* Темно-серый фон */
+    border: none;
+    border-radius: 10px;
+}
+
+tooltip label {
+    font-family: "JetBrainsMono Nerd Font"; /* Важно: только моноширинный! */
+    font-size: 14px;
+}
+
+/* Нацеливаемся на span с белым фоном */
+tooltip label span {
+    border-radius: 50%; /* Делаем круг */
+    /* Иногда GTK требует небольшого внешнего отступа, чтобы радиус сработал */
+    margin: 2px;
+}

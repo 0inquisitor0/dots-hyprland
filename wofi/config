@@ -1,0 +1,15 @@
+# Основные настройки
+show=drun
+width=400
+height=300
+location=center
+always_parse_args=true
+show_all=false
+print_command=true
+layer=overlay
+allow_images=false
+# Убирает стандартную рамку поиска
+hide_scroll=true
+display_generic=true
+# Текст внутри поля поиска
+prompt=search...

@@ -1,0 +1,45 @@
+{
+    "$schema": "https://github.com",
+    "logo": {
+        "type": "small",
+        "padding": {
+            "top": 2
+        }
+    },
+    "display": {
+        "separator": "  »  ",
+        "color": {
+            "keys": "white",
+            "title": "white"
+        }
+    },
+    "modules": [
+        "title",
+        "separator",
+        {
+            "type": "os",
+            "key": "os  ",
+            "keyColor": "38;5;245" // Серый
+        },
+        {
+            "type": "kernel",
+            "key": "ker ",
+            "keyColor": "38;5;245"
+        },
+        {
+            "type": "wm",
+            "key": "wm  ",
+            "keyColor": "38;5;245"
+        },
+        {
+            "type": "packages",
+            "key": "pkg ",
+            "keyColor": "38;5;245"
+        },
+        {
+            "type": "memory",
+            "key": "mem ",
+            "keyColor": "38;5;245"
+        }
+    ]
+}

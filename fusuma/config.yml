@@ -1,0 +1,12 @@
+swipe:
+  3:
+    up:
+      command: 'hyprctl dispatch fullscreen 1'
+    down:
+      command: 'hyprctl dispatch movefocus'
+
+threshold:
+  swipe: 0.5
+
+interval:
+  swipe: 1 # Позволит делать жесты чаще без задержки

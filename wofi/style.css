@@ -1,0 +1,69 @@
+/* Весь контейнер */
+window {
+    margin: 0px;
+    border: none;
+    /* Полупрозрачный серый фон (размытие добавим через Hyprland позже) */
+    background-color: rgba(30, 30, 30, 0.3); 
+    border-radius: 20px;
+    font-family: "JetBrainsMono Nerd Font", "monospace";
+}
+
+/* Внутренняя обертка */
+#outer-box {
+    margin: 15px;
+    border: none;
+    background-color: transparent;
+}
+
+/* Поле ввода (поиск) */
+#input {
+    margin: 5px 5px 15px 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(60, 60, 60, 0.5);
+    color: #ffffff;
+    padding: 10px;
+}
+
+/* Список приложений */
+#scroll {
+    margin: 0px;
+    border: none;
+}
+
+#inner-box {
+    margin: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+/* Отдельный элемент списка */
+#entry {
+    padding: 8px;
+    border-radius: 12px;
+    border: none;
+}
+
+/* Когда навели курсор или выбрали клавиатурой */
+#entry:selected {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    outline: none;
+}
+
+/* Текст и иконки */
+#text {
+    margin: 3px;
+    border: none;
+    color: #dddddd;
+}
+
+#text:selected {
+    color: #333333;
+    font-weight: bold;
+}
+
+#img {
+    margin-right: 10px;
+    background-color: transparent;
+}
